@@ -5,7 +5,26 @@
         "ProjectId": "94d9a138-664f-4bf8-b047-5c47ff0473be",
         "ProjectName": "projectNameOra3",
         "DBTypeName": "Oracle",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "35df5875-0f2f-4956-92bc-67c1c3bc0004",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "342218b6-6ee9-44a0-97d6-805e11a1847a",
+                "DatabaseAliasName": "ora_db1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/roylauzon76/ora_db1.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +40,31 @@
       "UserData": [
         {
           "UserName": "roylauzon76",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "342218b6-6ee9-44a0-97d6-805e11a1847a",
+              "DatabaseAliasName": "ora_db1",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "Oracle",
+                    "host": "localhost",
+                    "port": "1521",
+                    "identifierType": "SERVICE_NAME",
+                    "identifier": "XEPDB1",
+                    "userName": "ROY",
+                    "Password": "3Gb0hbYzmDIwRNmEt2GLYw=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "roylauzon76",
+                "Password": "pm26kx5Y5vEQKS6VkmCD7LohuM7s0mwHWUEooIEYqu8eh/JKyVI1Z9On1tjuCZ/M"
+              }
+            }
+          ]
         }
       ]
     }
